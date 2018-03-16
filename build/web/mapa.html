@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3">
+            
+            
+        </script>
+    </head>
+    <body>
+       
+        <h1>Prueba</h1>
+        <div id="mapa"  width="450" height="450">
+            --Aca va nuestro Mapa
+            
+        </div>
+        <script type="text/javascript">
+            var divMapa=document.getElementById("mapa");
+            navigator.geolocation.getCurrentPosition(fn_ok,fn_mal);
+        function fn_mal(){}
+        function fn_ok(rta){
+         var lat=rta.coords.latitude;
+         var lon=rta.coords.longitude;
+         var glatLon=new google.maps.LatLng(lat,lon);
+         var.objConfing={
+             zoom:17,
+             center:gLatLon
+         }
+           var gMapa=new google.maps.Map( divMapa, objConfing); 
+        }
+        </script>
+    </body>
+</html>

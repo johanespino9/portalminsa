@@ -1,0 +1,38 @@
+.fondocentrado{
+    background-color: #07337a;
+    align-content: center;
+}
+.fondominsa{
+   background-color:  #07337a;
+}
+.margenes{
+    padding: 50px;
+}
+.espaciado{
+    padding: 10px;
+}
+
+.letrablanca{
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.btnespacio{
+    padding: 30px;
+}
+
+#lo:hover{
+    background-color: #1d71f7;
+    color: white;
+}
+#lo2:hover{
+    background-color: #1d71f7;
+    color: white;
+}
+#lo3:hover{
+    background-color: #1d71f7;
+    color: white;
+}
+
+
